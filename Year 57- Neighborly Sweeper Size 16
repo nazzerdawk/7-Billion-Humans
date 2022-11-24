@@ -1,0 +1,38 @@
+-- 7 Billion Humans (2234) --
+-- 57: Neighborly Sweeper --
+
+comment 0
+if w == wall:
+	mem3 = foreachdir nw,w,sw,n,s,ne,e,se:
+		mem3 = calc 0 x 1
+	endfor
+	mem4 = set 1
+endif
+a:
+if mem4 == 1:
+	step e
+else:
+	step w
+endif
+mem1 = foreachdir nw,w,sw,n,s,ne,e,se:
+	if mem1 == datacube:
+		mem2 = calc mem2 + 1
+	endif
+endfor
+pickup c
+write mem2
+drop
+mem2 = set 0
+jump a
+
+
+DEFINE COMMENT 0
+eJztkc9L1FEUxT9/QLsKo5WERUSEWogr6acLCVOQCBcWYiLSqoVMw2SnSU2HHAcRG0W0hsFFVGCkqNC0
+HUtLUyQSaTXiILQpxGXn+/0zoguHd+977953znlDOE5RrVIqdZwLKqGao1zVYW5yhGZOEOEkfUaCMlKu
+RznGNCVkg1ZVEFUl78L8PLXBSg1dukhE9e5tIKYb9FBHWld4xSXmjEVdZpFrzKnRe0HvbYZpZYS7XjtJ
+qJNutRstzpsZ1i3e6g6faGc5fGOAcvVzlqec1hPO8JhzekiNojTxwLciRI1nrjOKMa1HRi8Z+plQgnEN
+WssQfUrR5qxWSaoY9MwBzwpiDJEmruckleaL842Q5xj3XHdo3Jjivl5aZ9YcM+Y9yaQmeBHee8MhZkhp
+xnqDOmtvXnNdszRogfrwjY/ml2PUWA3v5GjVB7uQoyOs88TI27c871liXkvW8pk4K9b2lS7W7PM3+7tu
+fzc8Z93aNs35u89/mNeW+7f9dz+tO5i3S4+KyIg5j2rH/hZ8XrDGgnt3rKBI0oizay1F//Oe/+eXmQdx
+QJn27fMfa//NPP/jn4i/i3KtZQ;
+
